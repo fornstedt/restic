@@ -17,7 +17,9 @@ Handle Restic backups with BackBlaze
 3. Create password file
 > echo "your-restic-password" > /usr/local/sbin/restic/restic-pw-txt
 
-4. Create folder file, one line for each folder you want to backup
+4. Update `restic-env.sh` with your BackBlaze credentials
+
+5. Create folder file, one line for each folder you want to backup
 > echo "/path/to/folder1" > /usr/local/sbin/restic/backup-folders.txt<br/>
 > echo "/path/to/folder2" >> /usr/local/sbin/restic/backup-folders.txt<br/>
 > ...
