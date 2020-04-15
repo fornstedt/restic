@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SCRIPT_FOLDER=/usr/local/sbin/restic
+TIME_STAMP=`date +%Y-%m-%d-%H%M`
+TMP_LOG_FILE=${SCRIPT_FOLDER}/logs/raid-backup.log
+LOG_FILE=${SCRIPT_FOLDER}/logs/${TIME_STAMP}-raid-backup.log
+
+${SCRIPT_FOLDER}/run_backup.sh > ${TMP_LOG_FILE}
+cp ${TMP_LOG_FILE} ${LOG_FILE}
