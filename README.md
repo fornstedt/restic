@@ -12,7 +12,7 @@ Handle Restic backups with BackBlaze
 > git clone https://github.com/eric1980/restic
 
 2. Add symbolic link to cron
-> sudo ln -s /usr/local/sbin/restic/cronjob/raid-backup /etc/cron/daily/raid-backup
+> sudo ln -s /usr/local/sbin/restic/cronjob/raid-backup /etc/cron.daily/raid-backup
 
 3. Create password file
 > echo "your-restic-password" > /usr/local/sbin/restic/restic-pw-txt
