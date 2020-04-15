@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 PATH=/snap/bin:${PATH}
 
 # Backblaze B2 configuration variables
-source ${DIR}/restic_env.sh
+source ${DIR}/restic-env.sh
 
 echo
 echo "##############################################"
@@ -19,7 +19,7 @@ while read folder; do
   echo "# Run backup for ${folder}"
   echo "##############################################"
   restic backup -o b2.connections=50 ${folder}
-done < ${DIR}/backup_folders.txt
+done < ${DIR}/backup-folders.txt
 
 echo
 echo "##############################################"
@@ -39,7 +39,7 @@ echo "# List latest snapshots"
 echo "##############################################"
 restic snapshots --last
 
-source ${DIR}/restic_env_unset.sh
+source ${DIR}/restic-env-unset.sh
 
 echo "All done"
 
