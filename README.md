@@ -15,7 +15,7 @@ Handle Restic backups with BackBlaze
 > sudo ln -s /usr/local/sbin/restic/cronjob/raid-backup /etc/cron.daily/raid-backup
 
 3. Create password file
-> echo "your-restic-password" > /usr/local/sbin/restic/restic-pw-txt
+> echo "your-restic-password" > /usr/local/sbin/restic/restic-pw.txt
 
 4. Update `restic-env.sh` with your BackBlaze credentials
 
