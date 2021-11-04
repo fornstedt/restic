@@ -25,7 +25,7 @@ echo
 echo "##############################################"
 echo "# Remove old snapshots"
 echo "##############################################"
-restic forget --keep-daily 7 --keep-weekly 8 --keep-monthly 24
+restic forget --keep-daily 7 --keep-weekly 8 --keep-monthly 24 --prune
 
 echo
 echo "##############################################"
