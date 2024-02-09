@@ -9,7 +9,7 @@ Handle Restic backups with BackBlaze
 
 1. Clone repository
 > cd /usr/local/sbin<br/>
-> git clone https://github.com/eric1980/restic
+> git clone https://github.com/fornstedt/restic
 
 2. Add symbolic link to cron
 > sudo ln -s /usr/local/sbin/restic/cronjob/raid-backup /etc/cron.daily/raid-backup
